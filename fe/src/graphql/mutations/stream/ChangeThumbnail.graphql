@@ -1,0 +1,3 @@
+mutation ChangeThumbnail($thumbnail:Upload!){
+    changeThumbnail(thumbnail:$thumbnail)
+}

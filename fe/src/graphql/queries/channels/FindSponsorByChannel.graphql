@@ -1,0 +1,19 @@
+query FindSponsorByChannel($channelId: String!) {
+  findSponsorByChannel(channelId: $channelId) {
+    expiresAt
+    plan {
+      title
+      description
+      price
+    }
+    user {
+      id
+      username
+      avatar
+    }
+    channel {
+      id
+      username
+    }
+  }
+}

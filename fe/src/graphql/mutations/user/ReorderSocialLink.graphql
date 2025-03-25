@@ -1,0 +1,3 @@
+mutation ReorderSocialLink($list: [SocialLinkOrderInput!]!){
+    reorderSocialLink(list:$list)
+}

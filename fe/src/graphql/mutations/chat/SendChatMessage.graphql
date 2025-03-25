@@ -1,0 +1,5 @@
+mutation SendChatMessage($data: SendMessageInput!) {
+  sendMessage(data: $data) {
+    streamId
+  }
+}

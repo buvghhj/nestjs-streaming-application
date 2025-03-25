@@ -1,0 +1,10 @@
+query FindMyFollower {
+  findMyFollowers {
+    createdAt
+    follower {
+      avatar
+      isVerified
+      username
+    }
+  }
+}

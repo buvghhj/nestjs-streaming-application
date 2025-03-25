@@ -1,0 +1,6 @@
+query FindMyFollowing{
+  findMyFollowings{
+    createdAt
+    followingId
+  }
+}

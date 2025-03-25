@@ -1,0 +1,629 @@
+{
+    "layout": {
+        "home": {
+            "title": "Trang chủ"
+        },
+        "header": {
+            "logo": {
+                "platform": "Nền tảng phát trực tuyến"
+            },
+            "headerMenu": {
+                "login": "Đăng nhập",
+                "register": "Đăng ký",
+                "profileMenu": {
+                    "notifications": {
+                        "heading": "Thông báo",
+                        "loading": "Đang tải...",
+                        "empty": "Bạn không có thông báo nào"
+                    },
+                    "successMessage": "Đăng xuất thành công",
+                    "errorMessage": "Lỗi đăng xuất",
+                    "channel": "Kênh của tôi",
+                    "dashboard": "Bảng điều khiển",
+                    "logout": "Đăng xuất"
+                }
+            },
+            "search": {
+                "placeholder": "Tìm kiếm..."
+            }
+        },
+        "sidebar": {
+            "header": {
+                "expand": "Mở rộng",
+                "collapse": "Thu gọn",
+                "navigation": "Điều hướng"
+            },
+            "userNav": {
+                "home": "Trang chủ",
+                "categories": "Danh mục",
+                "streams": "Luồng phát",
+                "recommended": "Đề xuất"
+            },
+            "recommended": {
+                "heading": "Gợi ý"
+            },
+            "dashboardNav": {
+                "settings": "Cài đặt",
+                "streamSettings": "Cài đặt luồng",
+                "keys": "Khóa luồng",
+                "chatSettings": "Cài đặt trò chuyện",
+                "followers": "Người theo dõi",
+                "sponsors": "Hội viên",
+                "premium": "Gói hội viên",
+                "transactions": "Giao dịch"
+            }
+        }
+    },
+    "home": {
+        "heading": "Trang chủ",
+        "streamsHeading": "Kênh có thể bạn thích",
+        "categoriesHeading": "Danh mục có thể bạn thích"
+    },
+    "categories": {
+        "heading": "Danh mục",
+        "overview": {
+            "heading": "Luồng phát cho danh mục này"
+        }
+    },
+    "streams": {
+        "heading": "Luồng phát",
+        "searchHeading": "Tìm kiếm theo từ khóa"
+    },
+    "stream": {
+        "video": {
+            "offline": "đang ngoại tuyến",
+            "loading": "Đang kết nối...",
+            "player": {
+                "volume": "Âm lượng",
+                "fullscreen": {
+                    "open": "Toàn màn hình",
+                    "exit": "Thoát toàn màn hình"
+                }
+            }
+        },
+        "info": {
+            "viewers": "người xem",
+            "offline": "Offline"
+        },
+        "actions": {
+            "follow": {
+                "confirmUnfollowHeading": "Bỏ theo dõi",
+                "confirmUnfollowMessage": "Bạn sẽ không nhận thông báo từ kênh này nữa và nó sẽ biến mất khỏi danh sách theo dõi của bạn.",
+                "unfollowButton": "Bỏ theo dõi",
+                "followButton": "Theo dõi",
+                "successFollowMessage": "Bạn đã theo dõi thành công",
+                "errorFollowMessage": "Lỗi khi theo dõi",
+                "successUnfollowMessage": "Bạn đã bỏ theo dõi thành công",
+                "errorUnfollowMessage": "Lỗi khi bỏ theo dõi"
+            },
+            "support": {
+                "alreadySponsor": "Bạn đã là hội viên",
+                "supportAuthor": "Tham gia",
+                "perMonth": "/tháng",
+                "choose": "Chọn",
+                "errorMessage": "Lỗi khi tạo thanh toán"
+            },
+            "share": {
+                "heading": "Chia sẻ"
+            }
+        },
+        "aboutChannel": {
+            "heading": "Giới thiệu",
+            "followersCount": "người theo dõi",
+            "noDescription": "Chưa có mô tả."
+        },
+        "sponsors": {
+            "heading": "Hội viên kênh"
+        },
+        "chat": {
+            "heading": "Trò chuyện",
+            "unavailable": "Trò chuyện không khả dụng",
+            "unavailableMessage": "Trò chuyện không khả dụng khi kênh không phát trực tiếp. Vui lòng quay lại sau!",
+            "loading": "Đang kết nối...",
+            "info": {
+                "authRequired": "Cần đăng nhập để trò chuyện",
+                "chatDisabled": "Trò chuyện đã bị tắt",
+                "premiumFollowersOnly": "Chỉ dành cho hội viên",
+                "followersOnly": "Chỉ dành cho người theo dõi"
+            },
+            "sendMessage": {
+                "placeholder": "Gửi tin nhắn",
+                "emojiPlaceholder": "Tìm kiếm",
+                "errorMessage": "Lỗi khi gửi tin nhắn."
+            }
+        },
+        "settings": {
+            "heading": "Cài đặt luồng",
+            "thumbnail": {
+                "updateButton": "Cập nhật hình ảnh",
+                "confirmModal": {
+                    "heading": "Xóa thumbnail luồng",
+                    "message": "Bạn có chắc chắn muốn xóa thumbnail của luồng không? Hành động này không thể hoàn tác."
+                },
+                "info": "Định dạng được hỗ trợ: JPG, JPEG, PNG hoặc GIF. Kích thước tối đa: 10 MB.",
+                "successUpdateMessage": "Cập nhật hình ảnh luồng thành công",
+                "errorUpdateMessage": "Lỗi khi cập nhật hình ảnh luồng",
+                "successRemoveMessage": "Xóa hình ảnh luồng thành công",
+                "errorRemoveMessage": "Lỗi khi xóa hình ảnh luồng"
+            },
+            "info": {
+                "titleLabel": "Tiêu đề",
+                "titlePlaceholder": "Luồng GTA 5",
+                "titleDescription": "Nhập tiêu đề cho luồng của bạn. Nó nên ngắn gọn và dễ nhớ.",
+                "categoryLabel": "Danh mục",
+                "categoryPlaceholder": "Chọn danh mục",
+                "categoryDescription": "Chọn danh mục phù hợp với nội dung của bạn. Điều này sẽ giúp người xem dễ dàng tìm thấy luồng của bạn hơn.",
+                "submitButton": "Lưu thay đổi",
+                "successMessage": "Cập nhật cài đặt luồng thành công",
+                "errorMessage": "Lỗi khi cập nhật cài đặt luồng"
+            }
+        }
+    },
+    "success": {
+        "heading": "Thanh toán thành công!",
+        "details": {
+            "heading": "Chi tiết tài trợ:",
+            "price": "Giá:",
+            "duration": "Thời hạn:",
+            "month": "tháng",
+            "channel": "Kênh:"
+        },
+        "congratulations": "Bạn đã có quyền truy cập vào nội dung cao cấp của kênh!",
+        "backToHome": "Quay lại Trang chủ",
+        "backToChannel": "Quay lại Kênh",
+        "support": "Nếu bạn có bất kỳ câu hỏi nào, hãy liên hệ với bộ phận hỗ trợ của chúng tôi."
+    },
+    "notFound": {
+        "description": "Rất tiếc, đã xảy ra lỗi.",
+        "backToHome": "Quay lại Trang chủ"
+    },
+    "auth": {
+        "register": {
+            "heading": "Đăng ký trên TanStream",
+            "backButtonLabel": "Đã có tài khoản? Đăng nhập",
+            "usernameLabel": "Tên người dùng",
+            "usernameDescription": "Đây là tên mà những người dùng khác sẽ biết về bạn. Bạn có thể thay đổi sau.",
+            "emailLabel": "Email",
+            "emailDescription": "Chúng tôi có thể sử dụng email của bạn để gửi thông báo liên quan đến tài khoản.",
+            "passwordLabel": "Mật khẩu",
+            "passwordDescription": "Mật khẩu phải chứa ít nhất 8 ký tự.",
+            "submitButton": "Đăng ký",
+            "successAlertTitle": "Kiểm tra email của bạn",
+            "successAlertDescription": "Một email xác minh đã được gửi đến hộp thư của bạn. Nếu không thấy, hãy kiểm tra thư mục spam.",
+            "errorMessage": "Lỗi khi tạo tài khoản"
+        },
+        "verify": {
+            "heading": "Xác minh tài khoản",
+            "successMessage": "Tài khoản đã được xác minh",
+            "errorMessage": "Lỗi xác minh"
+        },
+        "login": {
+            "heading": "Đăng nhập vào TanStream",
+            "backButtonLabel": "Chưa có tài khoản? Đăng ký!",
+            "loginLabel": "Đăng nhập",
+            "loginDescription": "Tên người dùng hoặc email mà bạn đã sử dụng khi đăng ký.",
+            "passwordLabel": "Mật khẩu",
+            "passwordDescription": "Mật khẩu bạn đã sử dụng khi đăng ký.",
+            "pinLabel": "Mã 6 chữ số",
+            "pinDescription": "Nhập mã từ ứng dụng xác thực của bạn. (ví dụ: Google Authenicator, Salesforce Authenticator,...)",
+            "forgotPassword": "Quên mật khẩu?",
+            "submitButton": "Đăng nhập",
+            "successMessage": "Bạn đã đăng nhập thành công",
+            "errorMessage": "Lỗi khi đăng nhập"
+        },
+        "resetPassword": {
+            "heading": "Đặt lại mật khẩu",
+            "backButtonLabel": "Đã có tài khoản? Đăng nhập",
+            "emailLabel": "Email",
+            "emailDescription": "Email bạn đã sử dụng khi đăng ký",
+            "submitButton": "Đặt lại mật khẩu",
+            "successAlertTitle": "Liên kết đã được gửi",
+            "successAlertDescription": "Chúng tôi đã gửi một liên kết đặt lại mật khẩu đến email của bạn. Nếu bạn đã bật thông báo Telegram, liên kết cũng được gửi đến đó.",
+            "errorMessage": "Lỗi đặt lại mật khẩu"
+        },
+        "newPassword": {
+            "heading": "Mật khẩu mới",
+            "backButtonLabel": "Đã có tài khoản? Đăng nhập",
+            "passwordLabel": "Mật khẩu mới",
+            "passwordDescription": "Mật khẩu bạn đã sử dụng khi đăng ký",
+            "passwordRepeatLabel": "Nhập lại mật khẩu",
+            "passwordRepeatDescription": "Nhập lại mật khẩu mới của bạn để xác nhận",
+            "submitButton": "Đặt mật khẩu mới",
+            "successMessage": "Mật khẩu đã được thay đổi thành công",
+            "errorMessage": "Lỗi khi đặt mật khẩu mới"
+        },
+        "deactivate": {
+            "heading": "Hủy kích hoạt tài khoản",
+            "backButtonLabel": "Đi đến Bảng điều khiển",
+            "emailLabel": "Email",
+            "emailDescription": "Email mà bạn đã sử dụng khi đăng ký",
+            "passwordLabel": "Mật khẩu",
+            "passwordDescription": "Mật khẩu bạn đã sử dụng khi đăng ký",
+            "pinLabel": "Mã 6 chữ số",
+            "pinDescription": "Một mã đã được gửi đến email của bạn. Nếu bạn đã bật thông báo Telegram, chúng tôi cũng đã gửi mã đến đó.",
+            "resendToken": "Gửi lại mã",
+            "submitButton": "Hủy kích hoạt",
+            "successMessage": "Bạn đã hủy kích hoạt tài khoản thành công",
+            "errorMessage": "Lỗi khi hủy kích hoạt"
+        }
+    },
+    "dashboard": {
+        "settings": {
+            "header": {
+                "heading": "Cài đặt",
+                "description": "Tại đây bạn có thể quản lý các cài đặt của mình",
+                "profile": "Hồ sơ",
+                "account": "Tài khoản",
+                "appearance": "Giao diện",
+                "notifications": "Thông báo",
+                "sessions": "Phiên làm việc"
+            },
+            "profile": {
+                "header": {
+                    "heading": "Hồ sơ",
+                    "description": "Tùy chỉnh hồ sơ của bạn bằng cách thay đổi ảnh đại diện, thông tin cá nhân và liên kết mạng xã hội. Cập nhật thông tin của bạn để người dùng khác có thể biết thêm về bạn."
+                },
+                "avatar": {
+                    "heading": "Ảnh hồ sơ",
+                    "updateButton": "Cập nhật ảnh hồ sơ",
+                    "confirmModal": {
+                        "heading": "Xóa ảnh đại diện",
+                        "message": "Bạn có chắc chắn muốn xóa ảnh hồ sơ không? Hành động này không thể hoàn tác."
+                    },
+                    "info": "Định dạng hỗ trợ: JPG, JPEG, PNG, WEBP hoặc GIF. Kích thước tối đa: 10 MB.",
+                    "successUpdateMessage": "Cập nhật ảnh hồ sơ thành công.",
+                    "errorUpdateMessage": "Lỗi khi cập nhật ảnh hồ sơ.",
+                    "successRemoveMessage": "Xóa ảnh hồ sơ thành công.",
+                    "errorRemoveMessage": "Lỗi khi xóa ảnh hồ sơ."
+                },
+                "info": {
+                    "heading": "Cài đặt hồ sơ",
+                    "usernameLabel": "Tên người dùng",
+                    "usernamePlaceholder": "johndoe",
+                    "usernameDescription": "Đây là cách người dùng khác sẽ biết đến bạn.",
+                    "displayNameLabel": "Tên hiển thị",
+                    "displayNamePlaceholder": "John Doe",
+                    "displayNameDescription": "Bạn có thể sử dụng chữ hoa trong tên hiển thị của mình nếu muốn.",
+                    "bioLabel": "Giới thiệu về tôi",
+                    "bioPlaceholder": "Tôi yêu lập trình",
+                    "bioDescription": "Thông tin về bản thân bạn không được vượt quá 300 ký tự.",
+                    "successMessage": "Cập nhật hồ sơ thành công",
+                    "errorMessage": "Lỗi khi cập nhật hồ sơ",
+                    "submitButton": "Lưu thay đổi"
+                },
+                "socialLinks": {
+                    "createForm": {
+                        "heading": "Liên kết mạng xã hội",
+                        "titleLabel": "Tiêu đề liên kết",
+                        "titlePlaceholder": "Youtube",
+                        "titleDescription": "Văn bản liên kết",
+                        "urlLabel": "URL liên kết",
+                        "urlPlaceholder": "https://github.com/buvghhj",
+                        "urlDescription": "Liên kết này dẫn đến đâu? Vui lòng nhập URL đầy đủ, ví dụ: https://github.com/buvghhj",
+                        "submitButton": "Thêm",
+                        "successMessage": "Liên kết mạng xã hội đã được thêm thành công",
+                        "errorMessage": "Lỗi khi thêm liên kết mạng xã hội"
+                    },
+                    "editForm": {
+                        "cancelButton": "Hủy",
+                        "submitButton": "Lưu",
+                        "successUpdateMessage": "Liên kết mạng xã hội đã được cập nhật thành công",
+                        "errorUpdateMessage": "Lỗi khi cập nhật liên kết mạng xã hội",
+                        "successRemoveMessage": "Liên kết mạng xã hội đã được xóa thành công",
+                        "errorRemoveMessage": "Lỗi khi xóa liên kết mạng xã hội"
+                    },
+                    "successReorderMessage": "Thứ tự liên kết mạng xã hội đã được thay đổi",
+                    "errorReorderMessage": "Lỗi khi thay đổi thứ tự liên kết mạng xã hội"
+                }
+            },
+            "account": {
+                "header": {
+                    "heading": "Tài khoản",
+                    "description": "Quản lý cài đặt tài khoản của bạn, bao gồm thay đổi quyền truy cập, bảo mật và các tùy chọn hủy kích hoạt.",
+                    "securityHeading": "Bảo mật",
+                    "securityDescription": "Cài đặt xác thực hai yếu tố và gia hạn tự động để bảo vệ dữ liệu của bạn tốt hơn.",
+                    "deactivationHeading": "Hủy kích hoạt",
+                    "deactivationDescription": "Nếu bạn muốn tạm thời hoặc vĩnh viễn vô hiệu hóa tài khoản của mình, hãy sử dụng tùy chọn này. Hãy lưu ý các hậu quả."
+                },
+                "email": {
+                    "heading": "Địa chỉ Email",
+                    "emailLabel": "Email",
+                    "emailDescription": "Nhập địa chỉ email mới của bạn.",
+                    "submitButton": "Lưu",
+                    "successMessage": "Email đã được cập nhật thành công",
+                    "errorMessage": "Lỗi khi cập nhật email"
+                },
+                "password": {
+                    "heading": "Mật khẩu tài khoản",
+                    "oldPasswordLabel": "Mật khẩu cũ",
+                    "oldPasswordDescription": "Nhập mật khẩu cũ của bạn để xác minh danh tính trước khi thay đổi mật khẩu. Điều này cần thiết để đảm bảo an toàn cho tài khoản của bạn.",
+                    "newPasswordLabel": "Mật khẩu mới",
+                    "newPasswordDescription": "Mật khẩu mới của bạn phải có ít nhất 8 ký tự. Nên sử dụng ký tự đặc biệt để tăng cường bảo mật.",
+                    "confirmNewPasswordLabel": "Xác nhận mật khẩu mới",
+                    "confirmNewPasswordDescription": "Nhập lại mật khẩu mới của bạn để xác nhận khớp nhau",
+                    "submitButton": "Lưu",
+                    "successMessage": "Mật khẩu đã được cập nhật thành công",
+                    "errorMessage": "Lỗi khi cập nhật mật khẩu"
+                },
+                "twoFactor": {
+                    "heading": "Xác thực 2FA",
+                    "description": "Tăng cường bảo mật tài khoản của bạn bằng cách kích hoạt xác thực 2FA. Lớp bảo vệ bổ sung này yêu cầu nhập một mã duy nhất, giúp tài khoản của bạn ít bị tấn công từ bên ngoài.",
+                    "enable": {
+                        "trigger": "Kích hoạt",
+                        "heading": "Kích hoạt 2FA",
+                        "qrInstructions": "Quét mã QR để thêm 2FA",
+                        "secretCodeLabel": "Mã bí mật: ",
+                        "pinLabel": "Mã PIN",
+                        "pinDescription": "Vui lòng nhập mã 6 chữ số được cung cấp bởi ứng dụng xác thực của bạn.",
+                        "submitButton": "Xác nhận",
+                        "successMessage": "Xác thực 2FA đã được kích hoạt",
+                        "errorMessage": "Lỗi khi xác minh mã"
+                    },
+                    "disable": {
+                        "trigger": "Vô hiệu hóa",
+                        "heading": "Bạn có chắc chắn muốn vô hiệu hóa 2FA?",
+                        "message": "Việc vô hiệu hóa xác thực 2FA sẽ làm giảm tính bảo mật của tài khoản bạn. Bạn có chắc chắn muốn tiếp tục?",
+                        "successMessage": "Xác thực 2FA đã bị vô hiệu hóa",
+                        "errorMessage": "Lỗi khi vô hiệu hóa"
+                    }
+                },
+                "deactivation": {
+                    "heading": "Hủy kích hoạt tài khoản",
+                    "description": "Sau khi hủy kích hoạt tài khoản của bạn, bạn sẽ không thể đăng nhập. Tài khoản của bạn sẽ bị xóa hoàn toàn sau 7 ngày. Cho đến lúc đó, bạn có thể liên hệ với bộ phận hỗ trợ để khôi phục quyền truy cập và mở khóa tài khoản của mình.",
+                    "confirmModal": {
+                        "heading": "Xác nhận hủy kích hoạt",
+                        "message": "Bạn có chắc chắn muốn hủy kích hoạt tài khoản của mình? Quyền truy cập chỉ có thể được khôi phục trong vòng 7 ngày."
+                    },
+                    "button": "Hủy kích hoạt"
+                }
+            },
+            "appearance": {
+                "header": {
+                    "heading": "Giao diện",
+                    "description": "Tùy chỉnh giao diện trang web theo sở thích của bạn. Chọn một chủ đề và ngôn ngữ để làm cho trải nghiệm của bạn thoải mái hơn."
+                },
+                "theme": {
+                    "heading": "Thay đổi chủ đề",
+                    "description": "Bạn có thể chọn chủ đề tối hoặc sáng cho giao diện trang web.",
+                    "successMessage": "Chủ đề trang web đã được thay đổi thành công"
+                },
+                "language": {
+                    "heading": "Ngôn ngữ trang web",
+                    "description": "Chọn ngôn ngữ sẽ được sử dụng trên trang web.",
+                    "selectPlaceholder": "Chọn ngôn ngữ",
+                    "successMessage": "Ngôn ngữ trang web đã được thay đổi thành công"
+                },
+                "color": {
+                    "heading": "Màu sắc chủ đạo",
+                    "description": "Chọn một màu sắc chủ đạo cho giao diện"
+                }
+            },
+            "notifications": {
+                "header": {
+                    "heading": "Thông báo",
+                    "description": "Cấu hình cách bạn muốn nhận thông báo từ TanStream. Bạn sẽ nhận được thông báo về việc bắt đầu các buổi stream trên các kênh bạn đã đăng ký, cũng như thông báo về những người theo dõi mới."
+                },
+                "siteNotifications": {
+                    "heading": "Thông báo trên trang web",
+                    "description": "Nếu bạn tắt thông báo trên trang web, bạn sẽ không nhận được thông báo về những người đăng ký mới cho kênh của bạn và thông báo về các buổi stream mới."
+                },
+                "telegramNotifications": {
+                    "heading": "Thông báo Telegram",
+                    "description": "Nếu bạn bật thông báo qua Telegram, tài khoản TanStream của bạn sẽ được liên kết với tài khoản Telegram của bạn, và bạn sẽ nhận được các tin nhắn về các đăng ký mới, buổi stream mới, thay đổi mật khẩu và mã xác thực hai yếu tố."
+                },
+                "successMessage": "Cài đặt thông báo đã được cập nhật thành công",
+                "errorMessage": "Lỗi khi cập nhật cài đặt thông báo"
+            },
+            "sessions": {
+                "header": {
+                    "heading": "Phiên làm việc",
+                    "description": "Các phiên làm việc là các thiết bị mà bạn đang sử dụng hoặc đã sử dụng để truy cập tài khoản TanStream của bạn. Tại đây, bạn có thể xem các phiên làm việc hiện tại."
+                },
+                "info": {
+                    "current": "Phiên làm việc hiện tại",
+                    "active": "Các phiên làm việc đang hoạt động",
+                    "notFound": "Không tìm thấy phiên làm việc đang hoạt động"
+                },
+                "sessionItem": {
+                    "deleteButton": "Xóa",
+                    "detailsButton": "Chi tiết",
+                    "confirmModal": {
+                        "heading": "Xóa phiên làm việc",
+                        "message": "Bạn có chắc chắn muốn xóa phiên làm việc này không? Hành động này sẽ dẫn đến việc xóa không thể phục hồi phiên làm việc trên thiết bị này và sẽ kết thúc tất cả các hành động đang hoạt động liên quan đến nó."
+                    },
+                    "successMessage": "Phiên làm việc đã được xóa"
+                },
+                "sessionModal": {
+                    "heading": "Thông tin phiên làm việc",
+                    "device": "Thiết bị:",
+                    "location": "Vị trí:",
+                    "ipAddress": "Địa chỉ IP:",
+                    "createdAt": "Ngày tạo:"
+                }
+            }
+        },
+        "keys": {
+            "header": {
+                "heading": "Khóa Stream",
+                "description": "Tạo URL và khóa cho việc phát sóng."
+            },
+            "url": {
+                "heading": "URL"
+            },
+            "key": {
+                "heading": "Key"
+            },
+            "instructionModal": {
+                "trigger": "Hướng dẫn",
+                "heading": "🛠️ Hướng dẫn cài đặt OBS cho Livestream 🛠️",
+                "description": "Để bắt đầu chia sẻ nội dung với khán giả, hãy làm theo hướng dẫn từng bước để kết nối OBS Studio. Chỉ cần vài bước, bạn đã sẵn sàng phát trực tiếp!",
+                "step1Title": "🔑 Bước 1: Tải OBS Studio và Tạo URL Server và Khóa Stream",
+                "step1Description": "Để bắt đầu phát sóng, bạn cần hai yếu tố chính: URL Server và Khóa Stream. Làm theo các bước sau:",
+                "downloadObs": "Tải OBS Studio",
+                "downloadObsDescription": "Trước khi cài đặt stream, tải và cài đặt chương trình",
+                "obsLinkText": "OBS Studio",
+                "copyKeys": "Sao chép URL Server và Khóa Stream",
+                "copyKeysDescription": "Sau khi tạo, bạn sẽ thấy hai trường: URL Server và Khóa Stream. Nhấp vào biểu tượng sao chép bên cạnh mỗi trường để lưu chúng vào clipboard.",
+                "step2Title": "🎛️ Bước 2: Cài đặt OBS Studio",
+                "step2Description": "Bây giờ bạn đã có dữ liệu cần thiết, hãy cài đặt OBS để làm việc với stream của bạn:",
+                "openObs": "Mở OBS Studio",
+                "openObsDescription": "Nếu OBS chưa được cài đặt, tải nó từ trang chính thức và cài đặt. Khi mở, trang chính của OBS sẽ hiển thị.",
+                "openStreamSettings": "Mở Cài đặt Stream",
+                "openStreamSettingsDescription": "Trong menu trên cùng, nhấp vào “File” → “Settings.” Chuyển đến tab “Stream.”",
+                "enterDetails": "Nhập Thông tin Của Bạn",
+                "enterDetailsDescription": "Trong trường 'Service', chọn 'Custom...'. Dán URL Server đã sao chép vào trường 'URL'. Trong trường 'Stream Key', nhập Khóa Stream của bạn.",
+                "saveSettings": "Lưu Cài đặt",
+                "saveSettingsDescription": "Nhấp 'Apply' và sau đó 'OK' để lưu các thay đổi.",
+                "step3Title": "🚀 Bước 3: Bắt đầu Phát Sóng",
+                "step3Description": "Sau khi cài đặt OBS thành công, bạn đã sẵn sàng để bắt đầu phát sóng trực tiếp:",
+                "startStream": "Bắt đầu Phát Sóng",
+                "startStreamDescription": "Trở lại màn hình chính của OBS và nhấp vào nút 'Start Streaming'.",
+                "monitorStream": "Giám sát Stream của Bạn",
+                "monitorStreamDescription": "Stream của bạn sẽ bắt đầu ngay lập tức, và bạn có thể giám sát nó cả trên nền tảng và trong OBS.",
+                "congrats": "✨ Chúc mừng! Bạn đã cài đặt OBS thành công để phát sóng trên nền tảng của chúng tôi. Khán giả của bạn đang chờ đón những khoảnh khắc và nội dung thú vị mới! 🎉",
+                "close": "Đóng"
+            },
+            "createModal": {
+                "trigger": "Tạo Khóa",
+                "heading": "Tạo Khóa",
+                "ingressTypeLabel": "Loại Kết nối",
+                "ingressTypePlaceholder": "Chọn loại kết nối",
+                "ingressTypeDescription": "Chọn RTMP cho phát sóng truyền thống hoặc WHIP cho kết nối WebRTC.",
+                "submitButton": "Tạo",
+                "successMessage": "Ingress đã được tạo",
+                "errorMessage": "Lỗi khi tạo ingress"
+            }
+        },
+        "chat": {
+            "header": {
+                "heading": "Cài đặt trò chuyện",
+                "description": "Tại đây bạn có thể quản lý cài đặt chat của mình."
+            },
+            "isChatEnabled": {
+                "heading": "Bật Chat",
+                "description": "Nếu bạn bật chat, người xem sẽ có thể gửi tin nhắn trong chat trong suốt buổi phát sóng của bạn."
+            },
+            "isChatFollowersOnly": {
+                "heading": "Chat Chỉ Dành Cho Người Theo Dõi",
+                "description": "Nếu bạn bật cài đặt này, chỉ những người theo dõi bạn mới có thể gửi tin nhắn trong chat."
+            },
+            "isChatPremiumFollowersOnly": {
+                "heading": "Chat Chỉ Dành Cho Người Theo Dõi Cao Cấp",
+                "description": "Nếu bạn bật cài đặt này, chỉ những người theo dõi cao cấp mới có thể gửi tin nhắn trong chat."
+            },
+            "successMessage": "Cài đặt chat đã được cập nhật thành công",
+            "errorMessage": "Lỗi khi cập nhật cài đặt chat"
+        },
+        "followers": {
+            "header": {
+                "heading": "Người Theo Dõi",
+                "description": "Dưới đây là danh sách tất cả người theo dõi của bạn."
+            },
+            "columns": {
+                "date": "Ngày",
+                "user": "Người dùng",
+                "actions": "Hành động",
+                "viewChannel": "Xem kênh"
+            }
+        },
+        "sponsors": {
+            "header": {
+                "heading": "Danh sách hội viên",
+                "description": "Dưới đây là danh sách tất cả hội viên của bạn."
+            },
+            "columns": {
+                "date": "Ngày hết hạn",
+                "user": "Người dùng",
+                "plan": "Loại gói hội viên",
+                "actions": "Hành động",
+                "viewChannel": "Xem Kênh"
+            }
+        },
+        "plans": {
+            "header": {
+                "heading": "Gói hội viên",
+                "description": "Dưới đây là danh sách các gói hội viên cho kênh của bạn."
+            },
+            "alert": {
+                "heading": "Cần xác minh kênh",
+                "description": "Để tạo các gói hội viên, kênh của bạn phải được xác minh. Bạn chỉ cần 10 người đăng ký để nhận dấu kiểm và mở khóa tính năng này."
+            },
+            "createForm": {
+                "trigger": "Tạo gói hội viên",
+                "heading": "Tạo gói hội viên",
+                "titleLabel": "Tiêu đề",
+                "titlePlaceholder": "Đăng ký cao cấp cho kênh",
+                "titleDescription": "Nhập tên gói hội viên của bạn. Tên này sẽ được hiển thị cho người đăng ký của bạn.",
+                "descriptionLabel": "Mô tả",
+                "descriptionPlaceholder": "Mô tả những gì gói hội viên của bạn bao gồm",
+                "descriptionDescription": "Mô tả những gì gói hội viên của bạn bao gồm. Điều này sẽ giúp người đăng ký hiểu rõ lợi ích của việc đăng ký.",
+                "priceLabel": "Giá",
+                "priceDescription": "Chỉ định giá của gói hội viên của bạn bằng đơn vị tiền tệ. Đây là số tiền người dùng sẽ trả cho việc đăng ký.",
+                "submitButton": "Tạo",
+                "successMessage": "Gói hội viên đã được tạo",
+                "errorMessage": "Lỗi khi tạo gói hội viên"
+            },
+            "columns": {
+                "date": "Ngày tạo",
+                "title": "Tiêu đề",
+                "price": "Giá",
+                "actions": "Hành động",
+                "remove": "Xóa",
+                "successMessage": "Gói hội viên đã được xóa thành công",
+                "removeMessage": "Lỗi khi xóa gói hội viên"
+            }
+        },
+        "transactions": {
+            "header": {
+                "heading": "Giao Dịch",
+                "description": "Dưới đây là các giao dịch liên quan đến tài trợ kênh."
+            },
+            "columns": {
+                "date": "Ngày tạo",
+                "status": "Trạng thái",
+                "success": "Thành công",
+                "pending": "Đang chờ",
+                "failed": "Thất bại",
+                "expired": "Hết hạn",
+                "amount": "Số tiền"
+            }
+        }
+    },
+    "components": {
+        "liveBadge": {
+            "text": "LIVE"
+        },
+        "confirmModal": {
+            "cancel": "Hủy bỏ",
+            "continue": "Tiếp tục"
+        },
+        "copyButton": {
+            "successMessage": "Đã sao chép"
+        },
+        "dataTable": {
+            "notFound": "Không tìm thấy"
+        },
+        "emptyState": {
+            "heading": "Không tìm thấy",
+            "text": "Chúng tôi đã tìm kiếm mọi ngóc ngách của trang web, nhưng tiếc là không có kết quả cho yêu cầu của bạn. Có thể bạn thử tìm kiếm cái gì đó khác?"
+        }
+    },
+    "utils": {
+        "formatDate": {
+            "months": {
+                "january": "/ 1 /",
+                "february": "/ 2 /",
+                "march": "/ 3 /",
+                "april": "/ 4 /",
+                "may": "/ 5 /",
+                "june": "/ 6 /",
+                "july": "/ 7 /",
+                "august": "/ 8 /",
+                "september": "/ 9 /",
+                "october": "/ 1 /0",
+                "november": "/ 1 /1",
+                "december": "/ 1 /2"
+            }
+        }
+    }
+}

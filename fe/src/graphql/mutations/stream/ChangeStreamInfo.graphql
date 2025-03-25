@@ -1,0 +1,3 @@
+mutation ChangStreamInfo($data: ChangeStreamInfoInput!){
+  changeStreamInfo(data:$data)
+}

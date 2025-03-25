@@ -1,0 +1,10 @@
+subscription ChatMessageAdded($streamId: String!) {
+  chatMessagesAdded(streamId: $streamId) {
+   createdAt
+    user {
+      id
+      username
+    }
+    text
+  }
+}

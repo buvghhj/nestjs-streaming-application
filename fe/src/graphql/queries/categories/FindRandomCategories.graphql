@@ -1,0 +1,15 @@
+query FindRandomCategories {
+  findRandomCategories {
+    title
+    slug
+    description
+    thumbnailUrl
+    streams {
+      title
+      thumbnailUrl
+      isLive
+    }
+    createdAt
+    updatedAt
+  }
+}

@@ -1,0 +1,10 @@
+query FindChatMessageByStream($streamId: String!) {
+  findChatMessageByStream(streamId: $streamId) {
+    createdAt
+    user {
+      id
+      username
+    }
+    text
+  }
+}
