@@ -23,7 +23,7 @@ const main = async () => {
 
     try {
 
-        Logger.log('Begin fill record in DB')
+        Logger.log('Begin fill record in DB!')
 
         await prisma.$transaction([
 
@@ -103,13 +103,13 @@ const main = async () => {
 
                                         {
                                             title: 'Telegram',
-                                            url: `https//t.me/${username}`,
+                                            url: `https://t.me/${username}`,
                                             position: 1
                                         },
 
                                         {
                                             title: 'Youtube',
-                                            url: `https//youtube/${username}`,
+                                            url: `https://youtube.com/${username}`,
                                             position: 2
                                         }
 

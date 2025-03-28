@@ -286,7 +286,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\tanstream\\tanstream-backend\\prisma\\generated",
+      "value": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\tanstreamdp\\be\\prisma\\generated",
       "fromEnvVar": null
     },
     "config": {
@@ -300,11 +300,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\tanstream\\tanstream-backend\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\tanstreamdp\\be\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../.env",
+    "rootEnvPath": null,
     "schemaEnvPath": "../../.env"
   },
   "relativePath": "..",

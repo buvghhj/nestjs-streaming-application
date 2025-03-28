@@ -1,4 +1,4 @@
-import { TypeLiveKitOption } from "@/src/libs/livekit/types/livekit.type";
+import { TypeLiveKitOption } from "@/src/modules/libs/livekit/types/livekit.type";
 import { ConfigService } from "@nestjs/config";
 
 export const getLiveKitConfig = (configService: ConfigService): TypeLiveKitOption => {

@@ -4,9 +4,9 @@ import { NotificationService } from '../notification/notification.service';
 import Stripe from 'stripe';
 import { TransactionStatus } from '@/prisma/generated';
 import { ConfigService } from '@nestjs/config';
-import { TelegramService } from '@/src/libs/telegram/telegram.service';
-import { LivekitService } from '@/src/libs/livekit/livekit.service';
-import { StripeService } from '@/src/libs/stripe/stripe.service';
+import { TelegramService } from '@/src/modules/libs/telegram/telegram.service';
+import { LivekitService } from '@/src/modules/libs/livekit/livekit.service';
+import { StripeService } from '@/src/modules/libs/stripe/stripe.service';
 
 @Injectable()
 export class WebhookService {
@@ -23,7 +23,7 @@ export class WebhookService {
     public async receiveWebhookLivekit(body: string, authorization: string) {
 
 
-        const event = await this.livekitService.receiver.receive(body, authorization, true)
+        const event = this.livekitService.receiver.receive(body, authorization, true)
 
         if (event.event === 'ingress_started') {
 

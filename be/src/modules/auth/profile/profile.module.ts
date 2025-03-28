@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ProfileService } from './profile.service';
 import { ProfileResolver } from './profile.resolver';
+import { PrismaProfile } from './orm/profile-prisma';
+import { ProfileAbstract } from './profile-abstract';
 
 @Module({
 
@@ -8,7 +10,17 @@ import { ProfileResolver } from './profile.resolver';
 
     ProfileResolver,
 
-    ProfileService
+    ProfileService,
+
+    PrismaProfile,
+
+    {
+
+      provide: ProfileAbstract,
+
+      useClass: PrismaProfile
+
+    }
 
   ],
 

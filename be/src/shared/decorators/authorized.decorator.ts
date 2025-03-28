@@ -2,6 +2,7 @@ import { User } from "@/prisma/generated";
 import { createParamDecorator, ExecutionContext } from "@nestjs/common";
 import { GqlExecutionContext } from "@nestjs/graphql";
 
+//Lấy dữ liệu của user từ req 
 export const Authorized = createParamDecorator(
 
     (data: keyof User, ctx: ExecutionContext) => {

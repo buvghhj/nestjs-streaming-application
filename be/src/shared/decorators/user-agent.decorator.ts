@@ -2,6 +2,7 @@ import { createParamDecorator, ExecutionContext } from "@nestjs/common";
 import { GqlExecutionContext } from "@nestjs/graphql";
 import { Request } from "express";
 
+//Lấy dữ liệu của client từ req (browser, os, thiết bị,...)
 export const UserAgent = createParamDecorator(
 
     (data: unknown, ctx: ExecutionContext) => {

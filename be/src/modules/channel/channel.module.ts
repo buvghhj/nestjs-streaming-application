@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ChannelService } from './channel.service';
 import { ChannelResolver } from './channel.resolver';
+import { PrismaChannel } from './orm/channel-prisma';
+import { ChannelAbstract } from './channel-abstract';
 
 @Module({
 
@@ -8,7 +10,17 @@ import { ChannelResolver } from './channel.resolver';
 
     ChannelResolver,
 
-    ChannelService
+    ChannelService,
+
+    PrismaChannel,
+
+    {
+
+      provide: ChannelAbstract,
+
+      useClass: PrismaChannel
+
+    }
 
   ],
 

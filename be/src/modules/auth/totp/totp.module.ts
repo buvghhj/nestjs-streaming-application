@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { TotpService } from './totp.service';
 import { TotpResolver } from './totp.resolver';
+import { PrismaTotp } from './orm/totp-prisma';
+import { TotpAbstract } from './totp.abstract';
 
 @Module({
 
@@ -8,7 +10,17 @@ import { TotpResolver } from './totp.resolver';
 
     TotpResolver,
 
-    TotpService
+    TotpService,
+
+    PrismaTotp,
+
+    {
+
+      provide: TotpAbstract,
+
+      useClass: PrismaTotp
+
+    }
 
   ],
 

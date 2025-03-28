@@ -36,7 +36,7 @@ export class WebhookController {
 
     }
 
-    const event = await this.webhookService.constructorStripeEvent(rawBody, sig)
+    const event = this.webhookService.constructorStripeEvent(rawBody, sig)
 
     await this.webhookService.receiveWebhookStripe(event)
 

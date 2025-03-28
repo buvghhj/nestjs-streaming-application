@@ -35,7 +35,7 @@ const StreamCard = ({ stream }: StreamCardProps) => {
 
                         {stream.user.username}
 
-                        {stream.user.isVerified && <ChannelVerified size='size-3' />}
+                        {stream.user.isVerified && <ChannelVerified size='sm' />}
 
                     </h2>
 

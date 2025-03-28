@@ -7,8 +7,7 @@ export const getGraphQLConfig = (configService: ConfigService): ApolloDriverConf
 
     return {
 
-        playground: isDev(configService)
-            ?
+        playground: isDev(configService) ?
             {
 
                 settings: { "request.credentials": "include" }

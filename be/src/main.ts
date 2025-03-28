@@ -12,7 +12,6 @@ import { RedisService } from './core/redis/redis.service';
 
 async function bootstrap() {
 
-  //rawBody -  webhook stripe
   const app = await NestFactory.create(CoreModule, { rawBody: true })
 
   const config = app.get(ConfigService)

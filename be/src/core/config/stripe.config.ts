@@ -1,4 +1,4 @@
-import { TypeStripeOptions } from "@/src/libs/stripe/types/stripe.type";
+import { TypeStripeOptions } from "@/src/modules/libs/stripe/types/stripe.type";
 import { ConfigService } from "@nestjs/config";
 
 export const getStripeConfig = (configService: ConfigService): TypeStripeOptions => {

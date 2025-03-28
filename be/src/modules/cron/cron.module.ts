@@ -2,6 +2,10 @@ import { Module } from '@nestjs/common';
 import { CronService } from './cron.service';
 import { ScheduleModule } from '@nestjs/schedule'
 import { NotificationService } from '../notification/notification.service';
+import { PrismaNotification } from '../notification/orm/notification-prisma';
+import { NotificationAbstract } from '../notification/notification-abstract';
+import { PrismaCron } from './orm/cron-prisma';
+import { CronAbstract } from './cron-abstract';
 
 @Module({
 
@@ -15,7 +19,27 @@ import { NotificationService } from '../notification/notification.service';
 
     CronService,
 
-    NotificationService
+    NotificationService,
+
+    PrismaNotification,
+
+    PrismaCron,
+
+    {
+
+      provide: CronAbstract,
+
+      useClass: PrismaCron
+
+    },
+
+    {
+
+      provide: NotificationAbstract,
+
+      useClass: PrismaNotification
+
+    }
 
   ],
 

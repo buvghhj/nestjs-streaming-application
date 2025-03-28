@@ -27,11 +27,11 @@ import { getStripeConfig } from "./config/stripe.config";
 import { PlanModule } from "../modules/sponsorship/plan/plan.module";
 import { SubscriptionModule } from "../modules/sponsorship/subscription/subscription.module";
 import { TransactionModule } from "../modules/sponsorship/transaction/transaction.module";
-import { LivekitModule } from "../libs/livekit/livekit.module";
-import { StripeModule } from "../libs/stripe/stripe.module";
-import { MailModule } from "../libs/mail/mail.module";
-import { StorageModule } from "../libs/storage/storage.module";
-import { TelegramModule } from "../libs/telegram/telegram.module";
+import { LivekitModule } from "../modules/libs/livekit/livekit.module";
+import { StripeModule } from "../modules/libs/stripe/stripe.module";
+import { MailModule } from "../modules/libs/mail/mail.module";
+import { StorageModule } from "../modules/libs/storage/storage.module";
+import { TelegramModule } from "../modules/libs/telegram/telegram.module";
 
 @Module({
 

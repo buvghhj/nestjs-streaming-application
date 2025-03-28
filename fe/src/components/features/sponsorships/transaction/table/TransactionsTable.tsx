@@ -54,7 +54,7 @@ const TransactionsTable = () => {
 
                             <div className={`py-1.5 ${statusColor}`}>{t('columns.failed')}</div>
                         )
-                    case TransactionStatus.Expried:
+                    case TransactionStatus.Expired:
                         statusColor = 'text-purple-500'
                         return (
 

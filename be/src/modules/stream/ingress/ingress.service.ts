@@ -2,7 +2,7 @@ import { PrismaService } from '@/src/core/prisma/prisma.service';
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { User } from '@/prisma/generated';
 import { CreateIngressOptions, IngressAudioEncodingPreset, IngressInput, IngressVideoEncodingPreset } from 'livekit-server-sdk';
-import { LivekitService } from '@/src/libs/livekit/livekit.service';
+import { LivekitService } from '@/src/modules/libs/livekit/livekit.service';
 
 @Injectable()
 export class IngressService {

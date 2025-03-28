@@ -5,9 +5,9 @@ import Redis from 'ioredis'
 @Injectable()
 export class RedisService extends Redis {
 
-  public constructor(private readonly confiService: ConfigService) {
+  public constructor(readonly configService: ConfigService) {
 
-    super(confiService.getOrThrow<string>('REDIS_URI'))
+    super(configService.getOrThrow<string>('REDIS_URI'))
 
   }
 

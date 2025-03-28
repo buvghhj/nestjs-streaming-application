@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { NotificationService } from './notification.service';
 import { NotificationResolver } from './notification.resolver';
+import { PrismaNotification } from './orm/notification-prisma';
+import { NotificationAbstract } from './notification-abstract';
 
 @Module({
 
@@ -8,13 +10,25 @@ import { NotificationResolver } from './notification.resolver';
 
     NotificationResolver,
 
-    NotificationService
+    NotificationService,
+
+    PrismaNotification,
+
+    {
+
+      provide: NotificationAbstract,
+
+      useClass: PrismaNotification
+
+    }
 
   ],
 
   exports: [
 
-    NotificationService
+    NotificationService,
+
+    PrismaNotification
 
   ]
 

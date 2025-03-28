@@ -33,7 +33,7 @@ interface HeadingProps extends VariantProps<typeof headingSizes> {
 
     description?: string
 
-    size?: keyof typeof headingSizes.variants.size
+    size?: "sm" | "default" | "lg" | "xl"
 
 }
 

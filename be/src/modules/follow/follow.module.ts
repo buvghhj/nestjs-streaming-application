@@ -2,6 +2,8 @@ import { Module } from '@nestjs/common';
 import { FollowService } from './follow.service';
 import { FollowResolver } from './follow.resolver';
 import { NotificationModule } from '../notification/notification.module';
+import { PrismaFollow } from './orm/follow-prisma';
+import { FollowAbstract } from './follow-abstract';
 
 @Module({
 
@@ -9,7 +11,17 @@ import { NotificationModule } from '../notification/notification.module';
 
     FollowResolver,
 
-    FollowService
+    FollowService,
+
+    PrismaFollow,
+
+    {
+
+      provide: FollowAbstract,
+
+      useClass: PrismaFollow
+
+    }
 
   ],
 

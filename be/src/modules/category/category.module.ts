@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { CategoryService } from './category.service';
 import { CategoryResolver } from './category.resolver';
+import { PrismaCategory } from './orm/category-prisma';
+import { CategoryAbstract } from './category-abstract';
 
 @Module({
 
@@ -8,7 +10,17 @@ import { CategoryResolver } from './category.resolver';
 
     CategoryService,
 
-    CategoryResolver
+    CategoryResolver,
+
+    PrismaCategory,
+
+    {
+
+      provide: CategoryAbstract,
+
+      useClass: PrismaCategory
+
+    }
 
   ],
 
