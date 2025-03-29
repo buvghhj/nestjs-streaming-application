@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
 
   reactComponentAnnotation: {
 
-    enabled: false,
+    enabled: true,
 
   },
 
