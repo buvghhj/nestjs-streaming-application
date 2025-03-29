@@ -19,7 +19,7 @@ export const getMailerConfig = (configService: ConfigService): MailerOptions => 
 
                 pass: configService.getOrThrow<string>('MAIL_PASSWORD')
 
-            }
+            },
 
         },
 

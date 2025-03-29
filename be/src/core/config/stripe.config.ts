@@ -9,7 +9,7 @@ export const getStripeConfig = (configService: ConfigService): TypeStripeOptions
 
         config: {
 
-            apiVersion: '2025-02-24.acacia'
+            apiVersion: '2025-02-24.acacia',
 
         }
 

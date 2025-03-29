@@ -9,7 +9,7 @@ export const getLiveKitConfig = (configService: ConfigService): TypeLiveKitOptio
 
         apiKey: configService.getOrThrow<string>('LIVEKIT_API_KEY'),
 
-        apiSecret: configService.getOrThrow<string>('LIVEKIT_API_SECRET')
+        apiSecret: configService.getOrThrow<string>('LIVEKIT_API_SECRET'),
 
     }
 

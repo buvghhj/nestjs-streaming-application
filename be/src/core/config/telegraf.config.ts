@@ -5,7 +5,7 @@ export const getTelegrafConfig = (configService: ConfigService): TelegrafModuleO
 
     return {
 
-        token: configService.getOrThrow<string>('TELEGRAM_BOT_TOKEN')
+        token: configService.getOrThrow<string>('TELEGRAM_BOT_TOKEN'),
 
     }
 
