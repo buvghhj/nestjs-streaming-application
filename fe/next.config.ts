@@ -11,7 +11,13 @@ const nextConfig: NextConfig = {
 
     domains: ['res.cloudinary.com', 'tanstream-record.s3.ap-southeast-1.amazonaws.com'],
 
-  }
+  },
+
+  reactComponentAnnotation: {
+
+    enabled: false,
+
+  },
 
 }
 
