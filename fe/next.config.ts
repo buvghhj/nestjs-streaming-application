@@ -13,12 +13,6 @@ const nextConfig: NextConfig = {
 
   },
 
-  reactComponentAnnotation: {
-
-    enabled: true,
-
-  },
-
 }
 
 export default withNextIntl({ ...nextConfig })
