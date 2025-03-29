@@ -1,8 +1,10 @@
 pipeline {
     agent any
 
-    environment {
-
+      environment {
+        DOCKER_USER = "your-dockerhub-username"
+        BE_IMAGE = "your-dockerhub-username/backend-streaming"
+        FE_IMAGE = "your-dockerhub-username/frontend-streaming"
     }
 
     stages {
