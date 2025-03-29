@@ -24,7 +24,7 @@ export const getGraphQLConfig = (configService: ConfigService): ApolloDriverConf
 
         context: ({ req, res }) => ({ req, res }),
 
-        installSubscriptionHandlers: true
+        installSubscriptionHandlers: true,
 
     }
 
