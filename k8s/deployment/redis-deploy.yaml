@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-deploy
+  namespace: staging
+  labels:
+    app: streaming-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: streaming-app
+  template:
+    metadata:
+      labels:
+        app: streaming-app
+    spec:
+      containers:
+       - name: redis
+         image: redis
+         imagePullPolicy: Always
+         ports:
+         - containerPort: 6379

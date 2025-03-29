@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: clusterip-redis
+  namespace: staging
+spec:
+  selector:
+    app: streaming-app
+  ports:
+    - port: 6379
+      targetPort: 6379
+      protocol: TCP

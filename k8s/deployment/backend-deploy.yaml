@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deploy
+  namespace: staging
+  labels:
+    app: streaming-app
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: streaming-app
+  template:
+    metadata:
+      labels:
+        app: streaming-app
+    spec:
+      containers:
+      - name: stream-backend
+        image: maitanchan/tanstream-backend:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8081
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "500Mi"
+          limits:
+            memory: "500Mi"   
