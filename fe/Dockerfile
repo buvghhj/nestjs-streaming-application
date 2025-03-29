@@ -6,7 +6,7 @@ COPY .prod.env ./.env
 
 COPY package.json package-lock.json ./
 
-RUN npm ci --legacy-peer-deps
+RUN npm ci 
 
 COPY . .
 
@@ -23,7 +23,7 @@ COPY --from=build /app/.next ./.next
 COPY --from=build /app/public ./public
 COPY --from=build /app/node_modules ./node_modules
 
-RUN npm ci --omit=dev --legacy-peer-deps
+RUN npm ci --omit=dev 
 
 EXPOSE 3000
 
