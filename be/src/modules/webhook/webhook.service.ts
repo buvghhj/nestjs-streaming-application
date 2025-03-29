@@ -2,7 +2,7 @@ import { PrismaService } from '@/src/core/prisma/prisma.service';
 import { Injectable } from '@nestjs/common';
 import { NotificationService } from '../notification/notification.service';
 import Stripe from 'stripe';
-import { TransactionStatus } from '@/prisma/generated';
+import { TransactionStatus } from '@prisma/generated';
 import { ConfigService } from '@nestjs/config';
 import { TelegramService } from '@/src/modules/libs/telegram/telegram.service';
 import { LivekitService } from '@/src/modules/libs/livekit/livekit.service';

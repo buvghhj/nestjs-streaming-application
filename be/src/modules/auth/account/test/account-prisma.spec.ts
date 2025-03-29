@@ -1,5 +1,5 @@
 import { PrismaService } from "@/src/core/prisma/prisma.service"
-import { PrismaAccount } from "../orms/account-prisma"
+import { PrismaAccount } from "../orm/account-prisma"
 import { Test, TestingModule } from "@nestjs/testing"
 import { VerificationService } from "../../verification/verification.service"
 import { BadRequestException, ConflictException, UnauthorizedException } from "@nestjs/common"

@@ -1,10 +1,12 @@
-import type { Config } from 'jest';
+const { defaults } = require('jest-config');
 
-const config: Config = {
+module.exports = {
 
   preset: 'ts-jest',
 
   testEnvironment: 'node',
+
+  moduleFileExtensions: [...defaults.moduleFileExtensions, 'mts'],
 
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/$1",
@@ -25,5 +27,3 @@ const config: Config = {
   coverageProvider: "v8",
 
 };
-
-export default config;

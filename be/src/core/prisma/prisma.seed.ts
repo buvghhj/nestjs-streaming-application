@@ -1,5 +1,5 @@
 import { BadRequestException, Logger } from "@nestjs/common";
-import { Prisma, PrismaClient } from '../../../prisma/generated'
+import { Prisma, PrismaClient } from '@/prisma/generated'
 import { hash } from "argon2";
 import { categoriesData } from "./seed/data/categories.data";
 import { streamTitle } from "./seed/data/streams.data";

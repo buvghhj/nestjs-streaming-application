@@ -3,7 +3,7 @@ import { AccountService } from './account.service';
 import { AccountResolver } from './account.resolver';
 import { VerificationModule } from '../verification/verification.module';
 import { AccountServiceAbstract } from './account-abstract'
-import { PrismaAccount } from './orms/account-prisma';
+import { PrismaAccount } from './orm/account-prisma';
 
 @Module({
 
