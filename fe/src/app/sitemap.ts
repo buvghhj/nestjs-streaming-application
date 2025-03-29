@@ -2,9 +2,6 @@ import { FindAllCategoriesDocument, FindAllCategoriesQuery } from '@/graphql/gen
 import { APP_URL, SERVER_URL } from '@/libs/constants/url.constant'
 import type { MetadataRoute } from 'next'
 
-
-
-
 const findAllCategories = async () => {
     try {
         const query = FindAllCategoriesDocument.loc?.source.body
