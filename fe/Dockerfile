@@ -6,7 +6,8 @@ COPY .prod.env ./.env
 
 COPY package.json package-lock.json ./
 
-RUN npm ci 
+RUN npm install -g npm@latest
+RUN npm ci --no-cache
 
 COPY . .
 
