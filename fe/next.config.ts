@@ -13,10 +13,6 @@ const nextConfig: NextConfig = {
 
   },
 
-  reactComponentAnnotation: {
-    enabled: 'development',
-  },
-
 }
 
 export default withNextIntl({ ...nextConfig })
