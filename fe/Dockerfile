@@ -2,6 +2,8 @@ FROM node:20.17.0-alpine AS build
 
 WORKDIR /app
 
+COPY .prod.env ./.env
+
 COPY package.json package-lock.json ./
 
 RUN npm ci --legacy-peer-deps
