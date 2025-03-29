@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/common/Button'
 
 export default async function NotFoundPage() {
 
-    const t = await getTranslations('notFound')
+    // const t = await getTranslations('notFound')
 
     return (
 
@@ -19,14 +19,14 @@ export default async function NotFoundPage() {
 
                 </h1>
 
-                <p className='mt-3 text-muted-foreground'>{t('description')}</p>
+                <p className='mt-3 text-muted-foreground'>Oops, something went wrong.</p>
 
                 <Link
                     href='/'
                     className='mt-5 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-3'
                 >
 
-                    <Button variant='secondary'>{t('backToHome')}</Button>
+                    <Button variant='secondary'>Back to Home</Button>
 
                 </Link>
 
