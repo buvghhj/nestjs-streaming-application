@@ -7,13 +7,6 @@ export default async function NotFoundPage() {
 
     const t = await getTranslations('notFound')
 
-    if (!t) {
-
-        console.error('Translation notFound is missing!')
-
-        return <div>Error loading translations</div>
-    }
-
     return (
 
         <div className='flex h-full w-full flex-col items-center justify-center'>
