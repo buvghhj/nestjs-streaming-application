@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 15s  
+  evaluation_interval: 15s  
+
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['prometheus:9090']
+  - job_name: 'jenkins'
+    metrics_path: '/prometheus'
+    scheme: https
+    static_configs:
+      - targets: ['66290ae6321415d74e38cd6c9c168d30.serveo.net']
+  
+  
