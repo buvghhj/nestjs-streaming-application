@@ -5,7 +5,7 @@ pipeline {
         DOCKER_USER = "maitanchan"
         BE_IMAGE = "maitanchan/backend-streaming"
         FE_IMAGE = "maitanchan/frontend-streaming"
-        NEXT_PUBLIC_APP_URL='https://4bd0-42-114-191-0.ngrok-free.app/'
+        NEXT_PUBLIC_APP_URL=' https://66290ae6321415d74e38cd6c9c168d30.serveo.net/'
         NEXT_PUBLIC_SERVER_URL='http://localhost:8080/graphql'
     }
 
