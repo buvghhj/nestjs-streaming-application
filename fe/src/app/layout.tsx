@@ -12,10 +12,15 @@ import { SITE_DESCRIPTION, SITE_KEYWORDS, SITE_NAME } from "@/libs/constants/seo
 import { APP_URL } from "@/libs/constants/url.constant";
 
 const libreFranklin = Libre_Franklin({
+
   subsets: ["latin", "vietnamese"],
+
   variable: "--font-libre-franklin",
+
   display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
+
+  weight: ["400", "500", "600", "700", "800"]
+
 })
 
 export const metadata: Metadata = {
@@ -37,8 +42,11 @@ export const metadata: Metadata = {
   authors: [
 
     {
+
       name: 'nguyennhattan',
+
       url: new URL('https://github.com/buvghhj')
+
     }
 
   ],
@@ -60,10 +68,15 @@ export const metadata: Metadata = {
     apple: '/touch-icons/256x256.png',
 
     other: {
+
       rel: 'touch-icons',
+
       url: '/touch-icons/256x256.png',
+
       sizes: '256x256',
+
       type: 'image/png'
+
     }
 
   },
@@ -81,12 +94,19 @@ export const metadata: Metadata = {
     locale: 'vi_VN',
 
     images: [
+
       {
+
         url: '/touch-icons/512x512.png',
+
         width: 512,
+
         height: 512,
+
         alt: SITE_NAME
+
       }
+
     ],
 
     url: new URL(APP_URL)
@@ -100,12 +120,19 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
 
     images: [
+
       {
+
         url: '/touch-icons/512x512.png',
+
         width: 512,
+
         height: 512,
+
         alt: SITE_NAME
+
       }
+
     ]
 
   }
@@ -123,7 +150,9 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
     <html lang={locale} suppressHydrationWarning>
 
       <head>
+
         <link rel="icon" href="/touch-icons/favicon.ico" />
+
       </head>
 
       <body suppressHydrationWarning className={libreFranklin.variable}>

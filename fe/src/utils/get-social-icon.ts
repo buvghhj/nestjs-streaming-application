@@ -1,16 +1,10 @@
 import { Link } from 'lucide-react'
-import {
-    FaDiscord,
-    FaGithub,
-    FaInstagram,
-    FaTelegram,
-    FaTiktok,
-    FaXTwitter,
-    FaYoutube
-} from 'react-icons/fa6'
+import { FaDiscord, FaGithub, FaInstagram, FaTelegram, FaTiktok, FaXTwitter, FaYoutube } from 'react-icons/fa6'
 
 export function getSocialIcon(url: string) {
+
     switch (true) {
+
         case url.includes('t.me'):
             return FaTelegram
         case url.includes('youtube.com') || url.includes('youtu.be'):
@@ -27,5 +21,7 @@ export function getSocialIcon(url: string) {
             return FaInstagram
         default:
             return Link
+
     }
+
 }

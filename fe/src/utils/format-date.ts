@@ -6,7 +6,7 @@ export function formatDate(
 ) {
     const t = useTranslations('utils.formatDate')
 
-    // Chuyển đổi ngày sang múi giờ Hà Nội (GMT+7)
+
     const date = new Date(dateString).toLocaleString('en-US', {
         timeZone: 'Asia/Ho_Chi_Minh',
     })

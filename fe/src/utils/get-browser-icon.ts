@@ -1,15 +1,10 @@
 import { CircleHelp } from 'lucide-react'
-import {
-    FaChrome,
-    FaEdge,
-    FaFirefoxBrowser,
-    FaOpera,
-    FaSafari,
-    FaYandex
-} from 'react-icons/fa'
+import { FaChrome, FaEdge, FaFirefoxBrowser, FaOpera, FaSafari, FaYandex } from 'react-icons/fa'
 
 export function getBrowserIcon(browser: string) {
+
     switch (browser.toLowerCase()) {
+
         case 'chrome':
             return FaChrome
         case 'firefox':
@@ -28,5 +23,7 @@ export function getBrowserIcon(browser: string) {
             return FaYandex
         default:
             return CircleHelp
+
     }
+
 }

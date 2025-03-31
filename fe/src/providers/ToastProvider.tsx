@@ -7,9 +7,11 @@ import { Toaster as Sonner } from "sonner"
 type ToasterProps = ComponentProps<typeof Sonner>
 
 export const ToastProvider = ({ ...props }: ToasterProps) => {
+
     const { theme = "system" } = useTheme()
 
     return (
+
         <Sonner
             theme={theme as ToasterProps["theme"]}
             className="toaster group"
@@ -22,6 +24,7 @@ export const ToastProvider = ({ ...props }: ToasterProps) => {
             }}
             {...props}
         />
+
     )
 }
 

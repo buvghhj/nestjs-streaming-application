@@ -3,7 +3,9 @@ import { Bell, Check, Fingerprint, Medal, Radio, User } from 'lucide-react'
 
 
 export function getNotificationIcon(type: NotificationType) {
+
     switch (type) {
+
         case NotificationType.StreamStart:
             return Radio
         case NotificationType.NewFollower:
@@ -16,5 +18,7 @@ export function getNotificationIcon(type: NotificationType) {
             return Check
         default:
             return Bell
+
     }
+
 }
