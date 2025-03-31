@@ -1,4 +1,4 @@
-import { BadRequestException, Body, Controller, Headers, HttpCode, HttpStatus, Post, RawBody, UnauthorizedException } from '@nestjs/common';
+import { Body, Controller, Headers, HttpCode, HttpStatus, Post, RawBody, UnauthorizedException } from '@nestjs/common';
 import { WebhookService } from './webhook.service';
 
 @Controller('webhook')
@@ -12,6 +12,10 @@ export class WebhookController {
     @Body() body: string,
     @Headers('authorization') authorization: string
   ) {
+
+    // console.log('📩 Webhook received:', body)
+
+    // console.log('🔑 Authorization:', authorization)
 
     if (!authorization) {
 
