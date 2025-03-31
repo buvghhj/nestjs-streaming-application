@@ -52,9 +52,11 @@ const findAllStreams = async () => {
 
         const data = await res.json()
 
+        console.log('ádfsadf', data);
+
         return {
 
-            streams: data.data.findAllStreams as FindAllStreamQuery['findAllStreams']
+            streams: data.data?.findAllStreams as FindAllStreamQuery['findAllStreams']
 
         }
 

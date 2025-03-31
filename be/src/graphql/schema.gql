@@ -307,7 +307,7 @@ type SponsorshipSubscriptionModel {
 }
 
 type StreamModel {
-  category: CategoryModel!
+  category: CategoryModel
   categoryId: String!
   chatMessages: [ChatModel!]!
   createdAt: DateTime!
