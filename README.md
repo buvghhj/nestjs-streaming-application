@@ -1,6 +1,17 @@
 
 # TanStream Project
 
+<p align="center">
+  <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+</p>
+
 ## Giới thiệu
 TanStream là một nền tảng streaming cho phép người dùng phát trực tiếp, tương tác với khán giả, quản lý thông báo, thanh toán và đăng ký gói tài trợ.
 
@@ -82,6 +93,5 @@ docker logs tanstream-backend
 docker logs tanstream-frontend
 ```
 - Backend sử dụng Telegram API, tuy nhiên, Telegram API hiện bị chặn IP tại Việt Nam. Nếu bạn đang triển khai dự án ở Việt Nam, hãy sử dụng VPN hoặc proxy để tránh gián đoạn.
-
 
 
