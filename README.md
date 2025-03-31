@@ -1,4 +1,4 @@
-![database-diagram](https://github.com/user-attachments/assets/f273f5b3-115d-4ba7-8ba1-c804d0430abf)
+
 # TanStream Project
 
 ## Giới thiệu
@@ -7,7 +7,7 @@ TanStream là một nền tảng streaming cho phép người dùng phát trực
 ## Cấu trúc Database
 Dưới đây là sơ đồ cấu trúc database của dự án:
 
-![Database Diagram](database-diagram.png)
+![database-diagram](https://github.com/user-attachments/assets/f273f5b3-115d-4ba7-8ba1-c804d0430abf)
 
 ### Các bảng chính:
 - **User**: Quản lý thông tin người dùng.
@@ -24,7 +24,7 @@ Dưới đây là sơ đồ cấu trúc database của dự án:
 - **NotificationSettings**: Cài đặt thông báo cho từng người dùng.
 
 ## Cách pull Docker images
-Để chạy backend và frontend của dự án, bạn cần pull các Docker images từ Docker Hub:
+Để chạy backend và frontend của dự án, pull các Docker images từ Dockerhub:
 
 ```sh
 # Pull backend image
@@ -34,7 +34,7 @@ docker pull maitanchan/tanstream-backend:latest
 docker pull maitanchan/tanstream-frontend:latest
 ```
 
-Sau khi pull xong, bạn có thể chạy container từ image này bằng lệnh:
+Sau khi pull xong, chạy container từ image này bằng lệnh:
 
 ```sh
 # Chạy backend
@@ -45,7 +45,34 @@ docker run -d -p 3000:3000 --name tanstream-frontend maitanchan/tanstream-fronte
 ```
 
 ## Hướng dẫn khởi chạy dự án
-(Phần này có thể bổ sung thêm hướng dẫn về môi trường phát triển, cách chạy bằng Docker Compose, cài đặt database, v.v.)
+Dự án sử dụng **PostgreSQL** làm database chính và **Redis** để lưu trữ cache. Bạn có thể sử dụng Docker Compose để chạy toàn bộ hệ thống:
+
+### 1. Khởi chạy database và Redis
+```sh
+docker-compose up -d postgres redis
+```
+Điều này sẽ tạo hai container:
+- **PostgreSQL** chạy trên cổng `5432`
+- **Redis** chạy trên cổng `6379`
+
+### 2. Cấu hình biến môi trường
+Tạo file `.env` và cấu hình các biến môi trường như sau:
+```env
+DB_HOST=postgres
+DB_PORT=5432
+DB_USER=your_username
+DB_PASSWORD=your_password
+DB_NAME=tanstream
+REDIS_HOST=redis
+REDIS_PORT=6379
+```
+
+### 3. Khởi chạy backend và frontend
+```sh
+docker-compose up -d backend frontend
+```
+
+Hệ thống sẽ khởi chạy toàn bộ dịch vụ backend, frontend, database và Redis.
 
 ---
 **Ghi chú:**
@@ -54,8 +81,7 @@ docker run -d -p 3000:3000 --name tanstream-frontend maitanchan/tanstream-fronte
 docker logs tanstream-backend
 docker logs tanstream-frontend
 ```
-- Backend sử dụng Telegram API, tuy nhiên, Telegram API hiện bị chặn IP tại Việt Nam. Nếu bạn đang triển khai dự án ở Việt Nam, hãy cân nhắc sử dụng VPN hoặc proxy để tránh gián đoạn.
+- Backend sử dụng Telegram API, tuy nhiên, Telegram API hiện bị chặn IP tại Việt Nam. Nếu bạn đang triển khai dự án ở Việt Nam, hãy sử dụng VPN hoặc proxy để tránh gián đoạn.
 
 
-```
 
