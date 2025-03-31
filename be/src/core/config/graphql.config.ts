@@ -26,6 +26,8 @@ export const getGraphQLConfig = (configService: ConfigService): ApolloDriverConf
 
         installSubscriptionHandlers: true,
 
+        introspection: true,
+
     }
 
 }

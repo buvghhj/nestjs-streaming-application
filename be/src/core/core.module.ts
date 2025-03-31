@@ -32,6 +32,7 @@ import { StripeModule } from "../modules/libs/stripe/stripe.module";
 import { MailModule } from "../modules/libs/mail/mail.module";
 import { StorageModule } from "../modules/libs/storage/storage.module";
 import { TelegramModule } from "../modules/libs/telegram/telegram.module";
+import { VoyagerModule } from "./voyager/voyager.module";
 
 @Module({
 
@@ -76,6 +77,8 @@ import { TelegramModule } from "../modules/libs/telegram/telegram.module";
             inject: [ConfigService]
 
         }),
+
+        VoyagerModule,
 
         PrismaModule,
 
