@@ -66,16 +66,66 @@ docker-compose up -d postgres redis
 - **PostgreSQL** chạy trên cổng `5432`
 - **Redis** chạy trên cổng `6379`
 
-### 2. Cấu hình biến môi trường
-Tạo file `.env` và cấu hình các biến môi trường như sau:
+### 2. Cấu hình biến môi trường, tạo file `.env` và cấu hình các biến môi trường như sau:
+Backend
 ```env
-DB_HOST=postgres
-DB_PORT=5432
-DB_USER=your_username
-DB_PASSWORD=your_password
-DB_NAME=tanstream
-REDIS_HOST=redis
-REDIS_PORT=6379
+NODE_ENV='development'
+
+APPLICATION_PORT=4000
+APPLICATION_URL='http://localhost:${APPLICATION_PORT}'
+
+GRAPHQL_PREFIX='/graphql'
+
+ALLOWED_ORIGIN='http://localhost:3000'
+
+COOKIES_SECRET=''
+SESSION_SECRET=''
+SESSION_NAME=''
+SESSION_DOMAIN=''
+SESSION_MAX_AGE=''
+SESSION_HTTP_ONLY=
+SESSION_SECURE=
+SESSION_FOLDER=':'
+
+POSTGRES_USER=''
+POSTGRES_PASSWORD=''
+POSTGRES_HOST=''
+POSTGRES_PORT=''
+POSTGRES_DATABASE=''
+POSTGRES_URI='postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DATABASE}'
+
+REDIS_USER=''
+REDIS_PASSWORD=''
+REDIS_HOST=''
+REDIS_PORT=''
+REDIS_URI='redis://${REDIS_USER}:${REDIS_PASSWORD}@${REDIS_HOST}:${REDIS_PORT}'
+
+MAIL_HOST='smtp.gmail.com'
+MAIL_PORT=465
+MAIL_LOGIN=''
+MAIL_PASSWORD=''
+
+S3_AWS_REGION=""
+S3_AWS_ACCESS_KEY_ID=""
+S3_AWS_SECRET_ACCESS_KEY=""
+S3_AWS_BUCKET_NAME=""
+
+LIVEKIT_API_URL=""
+LIVEKIT_API_KEY=""
+LIVEKIT_API_SECRET=""
+
+TELEGRAM_BOT_TOKEN=''
+
+STRIPE_SECRET_KEY=''
+STRIPE_WEBHOOK_SECRET=''
+```
+
+Frontend
+```env
+NEXT_PUBLIC_APP_URL='http://localhost:3000'
+NEXT_PUBLIC_SERVER_URL='http://localhost:4000/graphql'
+NEXT_PUBLIC_WEBSOCKET_URL='ws://localhost:4000/graphql'
+NEXT_PUBLIC_LIVEKIT_WS_URL='wss://xxx-xxx.livekit.cloud'
 ```
 
 ### 3. Khởi chạy backend và frontend
