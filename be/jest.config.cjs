@@ -9,7 +9,7 @@ module.exports = {
   moduleFileExtensions: [...defaults.moduleFileExtensions, 'mts'],
 
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>/$1",
+    "^@/(.*)$": "<rootDir>/src/$1",
     "^@prisma/generated$": "<rootDir>/prisma/generated",
     "^@prisma/generated/(.*)$": "<rootDir>/prisma/generated/$1"
   },
