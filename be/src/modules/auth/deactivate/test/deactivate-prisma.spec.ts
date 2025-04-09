@@ -389,7 +389,7 @@ describe('Deactivate Account Prisma', () => {
 
         })
 
-        it("should send deactivate token via email & tele", async () => {
+        it("should send deactivate token via email & telegram", async () => {
 
             const mockUser: User = {
 
