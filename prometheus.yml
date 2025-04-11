@@ -7,7 +7,7 @@ scrape_configs:
     metrics_path: "/prometheus"
     scheme: http
     static_configs:
-      - targets: ["localhost:8080"]
+      - targets: ["district-bool-tx-magnetic.trycloudflare.com"]
 
   - job_name: "prometheus"
     scrape_interval: 5s
