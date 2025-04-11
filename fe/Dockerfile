@@ -2,7 +2,7 @@ FROM node:23.11.0-alpine AS build
 
 WORKDIR /app
 
-COPY .prod.env ./.env
+COPY .env.production ./.env
 
 COPY package.json package-lock.json ./
 

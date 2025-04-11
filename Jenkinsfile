@@ -36,11 +36,20 @@ pipeline {
 
             steps {
 
-                sh 'cd fe && npm install --force && npm run build'
+                withEnv([
+                'NEXT_PUBLIC_SERVER_URL=https://sensor-too-guide-mark.trycloudflare.com/graphql',
+                'NEXT_PUBLIC_WEBSOCKET_URL=wss://sensor-too-guide-mark.trycloudflare.com/graphql',
+                'NEXT_PUBLIC_APP_URL=https://ampland-till-yellow-poland.trycloudflare.com',
+                'NEXT_PUBLIC_LIVEKIT_WS_URL=wss://tanstream-c3fkf70i.livekit.cloud'
+                ]) {
 
-                sh 'docker build -t $FE_IMAGE:latest -f fe/Dockerfile fe/'
+                    sh 'cd fe && npm install --force && npm run build'
 
-            }
+                    sh 'docker build -t $FE_IMAGE:latest -f fe/Dockerfile fe/'
+
+                }
+
+           }
 
         }
 
