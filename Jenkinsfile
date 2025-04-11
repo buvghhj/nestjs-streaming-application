@@ -40,18 +40,18 @@ pipeline {
            
             sh '''
 cat <<EOF > fe/.env.production
-NEXT_PUBLIC_SERVER_URL=https://sensor-too-guide-mark.trycloudflare.com/graphql
+NEXT_PUBLIC_SERVER_URL=https://locally-saw-female-downloadable.trycloudflare.com/graphql
 NEXT_PUBLIC_WEBSOCKET_URL=wss://sensor-too-guide-mark.trycloudflare.com/graphql
-NEXT_PUBLIC_APP_URL=https://ampland-till-yellow-poland.trycloudflare.com
+NEXT_PUBLIC_APP_URL=https://carmen-immediately-perfume-affiliates.trycloudflare.com
 NEXT_PUBLIC_LIVEKIT_WS_URL=wss://tanstream-c3fkf70i.livekit.cloud
 EOF
 '''
         }
 
                 withEnv([
-                'NEXT_PUBLIC_SERVER_URL=https://sensor-too-guide-mark.trycloudflare.com/graphql',
-                'NEXT_PUBLIC_WEBSOCKET_URL=wss://sensor-too-guide-mark.trycloudflare.com/graphql',
-                'NEXT_PUBLIC_APP_URL=https://ampland-till-yellow-poland.trycloudflare.com',
+                'NEXT_PUBLIC_SERVER_URL=https://locally-saw-female-downloadable.trycloudflare.com/graphql',
+                'NEXT_PUBLIC_WEBSOCKET_URL=wss://locally-saw-female-downloadable.trycloudflare.com/graphql',
+                'NEXT_PUBLIC_APP_URL=https://carmen-immediately-perfume-affiliates.trycloudflare.com',
                 'NEXT_PUBLIC_LIVEKIT_WS_URL=wss://tanstream-c3fkf70i.livekit.cloud'
                 ]) {
 
