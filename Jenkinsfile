@@ -40,18 +40,18 @@ pipeline {
            
             sh '''
 cat <<EOF > fe/.env.production
-NEXT_PUBLIC_SERVER_URL=https://locally-saw-female-downloadable.trycloudflare.com/graphql
+NEXT_PUBLIC_SERVER_URL=https://cambodia-quarterly-things-viii.trycloudflare.com/graphql
 NEXT_PUBLIC_WEBSOCKET_URL=wss://sensor-too-guide-mark.trycloudflare.com/graphql
-NEXT_PUBLIC_APP_URL=https://carmen-immediately-perfume-affiliates.trycloudflare.com
+NEXT_PUBLIC_APP_URL=https://flesh-background-terrorist-tue.trycloudflare.com
 NEXT_PUBLIC_LIVEKIT_WS_URL=wss://tanstream-c3fkf70i.livekit.cloud
 EOF
 '''
         }
 
                 withEnv([
-                'NEXT_PUBLIC_SERVER_URL=https://locally-saw-female-downloadable.trycloudflare.com/graphql',
-                'NEXT_PUBLIC_WEBSOCKET_URL=wss://locally-saw-female-downloadable.trycloudflare.com/graphql',
-                'NEXT_PUBLIC_APP_URL=https://carmen-immediately-perfume-affiliates.trycloudflare.com',
+                'NEXT_PUBLIC_SERVER_URL=https://cambodia-quarterly-things-viii.trycloudflare.com/graphql',
+                'NEXT_PUBLIC_WEBSOCKET_URL=wss://cambodia-quarterly-things-viii.trycloudflare.com/graphql',
+                'NEXT_PUBLIC_APP_URL=https://flesh-background-terrorist-tue.trycloudflare.com',
                 'NEXT_PUBLIC_LIVEKIT_WS_URL=wss://tanstream-c3fkf70i.livekit.cloud'
                 ]) {
 
@@ -69,7 +69,7 @@ EOF
 
             steps {
 
-                withDockerRegistry([credentialsId: '123', url: '']) {
+                withDockerRegistry([credentialsId: '4afd5a81-8ece-4cba-8a5e-943aea5ef466', url: 'https://index.docker.io/v1/']) {
 
                     sh 'docker push $BE_IMAGE:latest'
 
