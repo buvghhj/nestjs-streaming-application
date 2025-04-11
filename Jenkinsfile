@@ -36,30 +36,9 @@ pipeline {
 
             steps {
 
-                 script {
-           
-            sh '''
-cat <<EOF > fe/.env.production
-NEXT_PUBLIC_SERVER_URL=https://cambodia-quarterly-things-viii.trycloudflare.com/graphql
-NEXT_PUBLIC_WEBSOCKET_URL=wss://sensor-too-guide-mark.trycloudflare.com/graphql
-NEXT_PUBLIC_APP_URL=https://flesh-background-terrorist-tue.trycloudflare.com
-NEXT_PUBLIC_LIVEKIT_WS_URL=wss://tanstream-c3fkf70i.livekit.cloud
-EOF
-'''
-        }
-
-                withEnv([
-                'NEXT_PUBLIC_SERVER_URL=https://cambodia-quarterly-things-viii.trycloudflare.com/graphql',
-                'NEXT_PUBLIC_WEBSOCKET_URL=wss://cambodia-quarterly-things-viii.trycloudflare.com/graphql',
-                'NEXT_PUBLIC_APP_URL=https://flesh-background-terrorist-tue.trycloudflare.com',
-                'NEXT_PUBLIC_LIVEKIT_WS_URL=wss://tanstream-c3fkf70i.livekit.cloud'
-                ]) {
-
                     sh 'cd fe && npm install --force && npm run build'
 
                     sh 'docker build -t $FE_IMAGE:latest -f fe/Dockerfile fe/'
-
-                }
 
            }
 
