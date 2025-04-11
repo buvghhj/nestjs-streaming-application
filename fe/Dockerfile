@@ -1,4 +1,4 @@
-FROM node:20.17.0-alpine AS build
+FROM node:23.11.0-alpine AS build
 
 WORKDIR /app
 
@@ -6,16 +6,13 @@ COPY .prod.env ./.env
 
 COPY package.json package-lock.json ./
 
-RUN npm install -g npm@latest
 RUN npm ci --no-cache
 
 COPY . .
 
-RUN npm run dev || echo "GraphQL codegen skipped"
-
 RUN npm run build
 
-FROM node:20.17.0-alpine AS production
+FROM node:23.11.0-alpine AS production
 
 WORKDIR /app
 

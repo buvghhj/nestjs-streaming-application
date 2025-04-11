@@ -1,26 +1,21 @@
-# Base image
-FROM node:20.17.0-alpine AS base
+FROM node:23.11.0-alpine AS base
 
 RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
 
-FROM base as build
+FROM base AS build
 
 COPY package.json package-lock.json ./
 
-RUN npm install --frozen-lockfile  # Cài đặt dependencies
+RUN npm install --frozen-lockfile --no-cache
 
 COPY . .  
 
-RUN npm install @prisma/client
-
 RUN npx prisma generate
 
-# Build ứng dụng
 RUN npm run build
 
-# Production stage
 FROM base AS production
 
 WORKDIR /app
@@ -30,4 +25,4 @@ COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/prisma ./prisma 
 
-CMD ["node", "dist/main"]
+CMD ["node", "dist/main "]
