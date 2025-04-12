@@ -1,10 +1,14 @@
 pipeline {
     agent any
 
-      environment {
+    environment {
         DOCKER_USER = "maitanchan"
         BE_IMAGE = "maitanchan/backend-streaming"
         FE_IMAGE = "maitanchan/frontend-streaming"
+    }
+
+    options {
+        logstash()
     }
 
     stages {
