@@ -8,7 +8,9 @@ pipeline {
     }
 
     options {
+
         logstash()
+        
     }
 
     stages {
