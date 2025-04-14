@@ -34,6 +34,19 @@ services:
     networks:
       - elk
 
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.12.1
+    command: filebeat -e -strict.perms=false
+    container_name: filebeat
+    volumes:
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - /var/log:/var/log 
+    user: root
+    depends_on:
+      - logstash
+    networks:
+      - elk
+
 networks:
   elk:
     driver: bridge
