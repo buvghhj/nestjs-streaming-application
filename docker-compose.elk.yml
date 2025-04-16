@@ -40,7 +40,7 @@ services:
     container_name: filebeat
     volumes:
       - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
-      - /var/log:/var/log 
+      - /var/run/docker.sock:/var/run/docker.sock
     user: root
     depends_on:
       - logstash
